@@ -2,7 +2,7 @@ package nQueens;
 
 public class Main
 {
-	public static int n = 10;
+	public static int n = 8;
 
 	static boolean isAbleToPlace(String board[][], int row, int col) 
 	{
@@ -56,7 +56,7 @@ public class Main
 					return true;
 				}
 				
-				board[i][col] = "E";
+				board[i][col] = ".";
 			}
 		}
 		
@@ -72,7 +72,7 @@ public class Main
 		{
 			for (int j = 0; j < n; j++) 
 			{
-				board[i][j] = "E";
+				board[i][j] = ".";
 			}
 		}
 		
